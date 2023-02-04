@@ -11,6 +11,9 @@
 :root {
   --color-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
 }
+.wapper{
+  height: 2000px;
+}
 .header {
   background: #27323e;
   width: 100%;
@@ -63,7 +66,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px 15%;
+  margin-top: 25px;
+  margin: 0 15%;
 }
 .header-introduce_yourself {
   line-height: 3rem;
@@ -100,11 +104,57 @@
   cursor: pointer;
   padding: 9px 9px;
   font-size: 24px;
-  margin-right: 20px ;
+  margin-right: 20px;
   color: #fc4a1a;
 }
 .header-introduce .header-introduce-img img {
   object-fit: contain;
   width: 291px;
   height: 515px;
+}
+/* section */
+.section {
+}
+.section .section-story {
+  background: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 167px 15%;
+}
+.section-story .section-avatar h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 25px;
+}
+.section-story .section-about h2 {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #fff;
+  z-index: 1;
+}
+.section-story .section-about h2::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(108.7deg, #FC4A1A -29.1%, #F7B733 97.76%);
+  border-radius: 50%;
+  z-index: -1;
+  top: -15px;
+  left: -50px;
+}
+.section-story .section-about p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  margin: 25px 0;
 }
