@@ -121,6 +121,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 167px 15%;
+  gap: 8rem;
 }
 .section-story .section-avatar h3 {
   font-style: normal;
