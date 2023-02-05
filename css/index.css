@@ -11,8 +11,8 @@
 :root {
   --color-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
 }
-.wapper{
-  height: 2000px;
+.wapper {
+  height: 2500px;
 }
 .header {
   background: #27323e;
@@ -110,7 +110,7 @@
 .header-introduce .header-introduce-img img {
   object-fit: contain;
   width: 291px;
-  height: 515px;
+  height: 600px;
 }
 /* section */
 .section {
@@ -145,7 +145,7 @@
   position: absolute;
   width: 5rem;
   height: 5rem;
-  background: linear-gradient(108.7deg, #FC4A1A -29.1%, #F7B733 97.76%);
+  background: linear-gradient(108.7deg, #fc4a1a -29.1%, #f7b733 97.76%);
   border-radius: 50%;
   z-index: -1;
   top: -15px;
@@ -158,4 +158,61 @@
   line-height: 26px;
   color: #fff;
   margin: 25px 0;
+}
+/* services */
+.services {
+  background: #27323e;
+  padding: 60px 14rem;
+  position: relative;
+  z-index: -2;
+  text-align: center;
+}
+.services > h2 {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 44px;
+}
+.services > h2::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(108.7deg, #fc4a1a -29.1%, #f7b733 97.76%);
+  border-radius: 50%;
+  z-index: -1;
+  top: -15px;
+  left: -50px;
+}
+.services .my-services {
+  display: grid;
+  grid-template: "skill img skill1";
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+  text-align: start;
+}
+.my-skill > .skill {
+  margin-bottom: 33px;
+}
+.skill > h3 {
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #fff;
+}
+
+.skill > p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
 }
