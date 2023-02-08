@@ -12,7 +12,7 @@
   --color-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
 }
 .wapper {
-  height: 2500px;
+  height: 3000px;
 }
 .header {
   background: #27323e;
@@ -54,6 +54,7 @@
 }
 .nav-list a:hover {
   color: #354b44;
+  cursor: pointer;
 }
 #menu-icon {
   cursor: pointer;
@@ -215,4 +216,7 @@
   font-size: 18px;
   line-height: 21px;
   color: #fff;
+}
+.owl-carousel .show-project > img {
+  object-fit: cover;
 }

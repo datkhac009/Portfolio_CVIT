@@ -24,18 +24,18 @@
                 </div>
                 <div class="nav">
                     <ul class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">My services</a></li>
-                        <li><a href="#">Protflio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a data-link="section1" class="scroll_to">Home</a></li>
+                        <li><a data-link="section2" class="scroll_to">About me</a></li>
+                        <li><a data-link="section3" class="scroll_to">My services</a></li>
+                        <li><a data-link="section4" class="scroll_to">Protflio</a></li>
+                        <li><a data-link="" class="scroll_to">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-menu">
                     <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </div>
             </div>
-            <div class="header-introduce">
+            <div id="section1" class="header-introduce">
                 <div class="header-introduce_yourself">
                     <p class="animate__animated animate__bounceIn animate__slower">Hello, i’m</p>
                     <h2 class="animate__animated animate__backInLeft animate__slower">Mr.Đat</h2>
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="section">
-            <div class="section-story">
+            <div id="section2" class="section-story">
                 <div class="section-avatar">
                     <img src="./img/avatar.png" width="292px" height="292px" alt="Null img">
                     <h3 class="animate__animated animate__zoomInUp">Nguyen Khac Dat</h3>
@@ -68,7 +68,7 @@
                         <br> to generate quality stories that everyone can <br> enjoy.</p>
                 </div>
             </div>
-            <div class="services">
+            <div id="section3" class="services">
                 <h2>My services</h2>
                 <div class="my-services">
                     <div class="my-skill animate__animated animate__fadeInTopLeft animate__slower">
@@ -104,14 +104,40 @@
                     </div>
                 </div>
             </div>
+            <div id="section4" class="portfolio_project">
+                <h2>Portfolio</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="show-project">
+                        <img src="./img/project1.jpg" alt="img-null">
+                    </div>
+                    <div class="show-project">
+                        <img src="./img/project2.jpg" alt="img-null">
+                    </div>
+                    <div class="show-project">
+                        <img src="./img/project3.jpg" alt="img-null">
+                    </div>
+                    <div class="show-project">
+                        <img src="./img/project4.jpg" alt="img-null">
+                    </div>
+                    <div class="show-project">
+                        <img src="./img/project7.jpg" alt="img-null">
+                    </div>
+                    <div class="show-project">
+                        <img src="./img/project7.jpg" alt="img-null">
+                    </div>
+                    <div class="show-project">
+                        <img src="./img/project7.jpg" alt="img-null">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 </body>
-<script src="./library/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/owl.carousel.min.js"></script>
 <script src="./js/index.js"></script>
 
 </html>
