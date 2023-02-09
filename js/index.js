@@ -2,7 +2,7 @@ $('.owl-carousel').owlCarousel({
     items:3,
     loop: true,
     lazyLoad:true,
-    autoplay: true,
+    autoplay: false,
     animateOut: 'fadeOut',
     margin:50,
     responsive: {
@@ -18,7 +18,6 @@ $('.owl-carousel').owlCarousel({
     }
   });
   const links = document.querySelectorAll(".scroll_to");
-  console.log(links);
   links.forEach(items => {
     items.addEventListener("click",()=>{
       const el = document.getElementById(items.getAttribute("data-link"));
