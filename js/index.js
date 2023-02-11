@@ -31,8 +31,17 @@ links.forEach((item) => {
   item.addEventListener('click', function (event) {
     const el = event.target.dataset.link;
 
+    const listRoot = event.target.closest('.nav-list');
+    const findActive = listRoot.querySelectorAll(":scope .scroll_to.active");
+
+    if (findActive.length > 0) {
+      findActive[0].classList.remove('active');
+    }
+    
     const scrollToElement = document.querySelector(`#${el}`);
     window.scrollTo(0, scrollToElement.offsetTop);  
+  
+    event.target.classList.add('active');
   })
 });
 
