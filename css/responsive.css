@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+    #menu-icon{
+        display: block;
+    }
+    .nav-list{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background-color:rgb(123, 127, 131);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .nav-list li a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: #fff;
+    }
+    .nav-list li a:hover{
+        color: #354b44;
+    }
+    .nav-list li a.active{
+        color: #354b44;
+    }
+    .nav-list.open{
+        top: 100%;
+    }
+    .open{
+        top: 100%;
+    }
+}

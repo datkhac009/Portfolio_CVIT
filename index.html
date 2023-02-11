@@ -11,7 +11,9 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="icon" href="./img/favicon.jpg" type="img/x-icon">
     <title>CV Font-End</title>
 </head>
@@ -29,7 +31,7 @@
                         <li><a data-link="section2" class="scroll_to">About me</a></li>
                         <li><a data-link="section3" class="scroll_to">My services</a></li>
                         <li><a data-link="section4" class="scroll_to">Protflio</a></li>
-                        <li><a data-link="" class="scroll_to">Contact</a></li>
+                        <li><a data-link="section5" class="scroll_to">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-menu">
@@ -72,16 +74,27 @@
                     </p>
                 </div>
             </div>
-            <div id="section3" class="services">
+            <div id="section3" class="services" >
                 <h2>My services</h2>
                 <div class="my-services">
-                    <div class="my-skill animate__animated animate__fadeInTopLeft animate__slower">
-                        <div class="skill">
+                    <div class="my-skill">
+                    
+                        <div class="skill" data-aos="zoom-in-right"
+                        data-aos-delay="50"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="false">
                             <h3><i class="fa-solid fa-layer-group"></i> UI/UX DESIGN</h3>
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Sunt <br> doloremque
                                 excepturi sit odit <br> impedit, voluptas.</p>
                         </div>
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in-right"
+                        data-aos-delay="700"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="false">
                             <h3><i class="fa-solid fa-pen-to-square"></i> WEB DESIGN</h3>
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Sunt <br> doloremque
                                 excepturi sit odit <br> impedit, voluptas.</p>
@@ -90,13 +103,23 @@
                     <div class="img-projectskill">
                         <img src="./img/projectskill.jpg" width="244px" height="494px" alt="img null">
                     </div>
-                    <div class="my-skill animate__animated animate__fadeInTopRight animate__slower">
-                        <div class="skill">
+                    <div class="my-skill">
+                        <div class="skill" data-aos="zoom-in-left"
+                        data-aos-delay="50"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="false">
                             <h3><i class="fa-solid fa-layer-group"></i> WEB DEVELOPMENTD</h3>
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Sunt <br> doloremque
                                 excepturi sit odit <br> impedit, voluptas.</p>
                         </div>
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in-left"
+                        data-aos-delay="700"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="false">
                             <h3><i class="fa-solid fa-pen-to-square"></i> PHOTOGRAPHY</h3>
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Sunt <br> doloremque
                                 excepturi sit odit <br> impedit, voluptas.</p>
@@ -179,6 +202,14 @@
                     </div>
                 </div>
             </div>
+            <div id="section5" class="contact">
+                <div class="contact-form">
+
+                </div>
+                <div class="contact-info">
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -187,6 +218,7 @@
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./js/owl.carousel.min.js"></script>
+<script src="./js/aos.js"></script>
 <script src="./js/index.js"></script>
 
 </html>

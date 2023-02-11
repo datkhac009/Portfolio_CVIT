@@ -27,3 +27,20 @@ $('.owl-carousel').owlCarousel({
       })
     })
   });
+  AOS.init();
+  // let menu = document.querySelector("#menu-icon");
+  // let navlist = document.querySelector(".nav-list");
+
+  // menu.onclick=()=>{
+  //   navlist.classList.toggle("open");
+  // }
+  $(document).ready(function(){
+  $("#menu-icon").click(function(){
+    // $(".nav-list").addClass("open");
+    $(".nav-list").toggleClass("open");
+  });
+  // $(window).scroll(function(){
+  //   $(".nav-list").hide(".open");
+    
+  // })
+  });
