@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-.nav-list li a.active{
+.active{
   color: #354b44;
 }
 #menu-icon {

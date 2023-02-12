@@ -44,3 +44,9 @@ $('.owl-carousel').owlCarousel({
     
   // })
   });
+  var navItems = document.querySelectorAll(".nav-list");
+for (var i = 0; i < navItems.length; i++) {
+   navItems[i].addEventListener("click", function() {
+      this.classList.add("active");
+   });
+}
