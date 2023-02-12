@@ -36,16 +36,7 @@ $('.owl-carousel').owlCarousel({
   //   navlist.classList.toggle("open");
   // }
   // TTH2
-  $(document).ready(function(){
-  $("#menu-icon").click(function(){
-    // $(".nav-list").addClass("open");
-    $(".nav-list").toggleClass("open");
-  });
-  // $(window).scroll(function(){
-  //   $(".nav-list").hide(".open");
-    
-  // // })
-  });
+  
   const header = document.querySelector('.header .header-menu');
   const navList = document.querySelector('.header .header-menu .nav-list');
   let lastScroll = 0;
@@ -63,5 +54,10 @@ $('.owl-carousel').owlCarousel({
     lastScroll = currentScroll;
     return lastScroll
   });
-
+$(document).ready(function(){
+  $("#menu-icon").click(function(){
+    // $(".nav-list").addClass("open");
+    $(".nav-list").toggleClass("open");
+  });
+  });
 
