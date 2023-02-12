@@ -28,12 +28,14 @@ $('.owl-carousel').owlCarousel({
     })
   });
   AOS.init();
+  // TTH1
   // let menu = document.querySelector("#menu-icon");
   // let navlist = document.querySelector(".nav-list");
 
   // menu.onclick=()=>{
   //   navlist.classList.toggle("open");
   // }
+  // TTH2
   $(document).ready(function(){
   $("#menu-icon").click(function(){
     // $(".nav-list").addClass("open");
@@ -42,11 +44,24 @@ $('.owl-carousel').owlCarousel({
   // $(window).scroll(function(){
   //   $(".nav-list").hide(".open");
     
-  // })
+  // // })
   });
-  var navItems = document.querySelectorAll(".nav-list");
-for (var i = 0; i < navItems.length; i++) {
-   navItems[i].addEventListener("click", function() {
-      this.classList.add("active");
-   });
-}
+  const header = document.querySelector('.header .header-menu');
+  const navList = document.querySelector('.header .header-menu .nav-list');
+  let lastScroll = 0;
+  window.addEventListener('scroll', function (event) {
+    console.log(document.body.scrollTop);
+    let currentScroll = event.target.scrollingElement.scrollTop;
+  
+    if (lastScroll < currentScroll) {
+      header.classList.add('open');
+      if (navList.classList.contains('open'))
+        navList.classList.remove('open');
+      
+    } else header.classList.remove('open');
+    
+    lastScroll = currentScroll;
+    return lastScroll
+  });
+
+
