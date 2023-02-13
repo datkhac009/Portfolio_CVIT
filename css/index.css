@@ -12,7 +12,7 @@
   --color-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
 }
 .wapper {
-  height: 3000px;
+ 
 }
 .header {
   background: #27323e;
@@ -320,4 +320,132 @@
 }
 .show-project:hover .layer {
   height: 100%;
+}
+/* contact */
+.contact {
+  background: #27323e;
+  padding: 82px 0;
+  text-align: center;
+  z-index: 1;
+}
+.contact h2 {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #fff;
+  z-index: 1;
+  display: inline-block;
+  margin-bottom: 87px;
+}
+.contact h2::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(108.7deg, #fc4a1a -29.1%, #f7b733 97.76%);
+  border-radius: 50%;
+  z-index: -1;
+  top: -15px;
+  left: -50px;
+}
+.contact-form-group {
+  display: flex;
+  justify-content: center;
+  gap: 88px;
+}
+.form-firstname-lastname + .form-field {
+  margin: 28px 0;
+}
+.form-firstname-lastname {
+  display: flex;
+  column-gap: 35px;
+}
+.contact-form .form-field {
+  position: relative;
+  width: 300px;
+  width: 100%;
+}
+.contact-form .form-field .form-input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  height: 42px;
+  padding: 0 15px;
+}
+.contact-form .form-field .form-input:not(:placeholder-shown) {
+  border: 1px solid #ddd;
+}
+.contact-form .form-field .form-input:not(:placeholder-shown) + .form-label {
+  top: 0;
+  background: #fff;
+  padding: 0 8px;
+  color: #ccc;
+  left: 25px;
+}
+.contact-form .form-field .form-input:focus + .form-label {
+  top: 0;
+  background: #27323e;
+  padding: 0 15px;
+  color: #fff;
+  left: 25px;
+  border-radius: 50%;
+
+}
+.contact-form .form-field .form-input:focus {
+
+outline-color: #ff6200;
+  transition: .15s ;
+  
+}
+.contact-form .form-field .form-label {
+  position: absolute;
+  transition: all 0.45s ease;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  user-select: none;
+  pointer-events: none;
+  display: inline-block;
+}
+.form-field #message {
+  height: 188px;
+}
+.form-btn {
+  text-align: center;
+}
+.form-btn button {
+  background: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+  border: none;
+  text-align: center;
+  padding: 14px 62px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 86.5px;
+  margin-top: 43px;
+}
+.form-btn #btn-submit:hover {
+  background: #7ea699;
+  transition: all 0.45s;
+}
+.contact-info {
+  background: linear-gradient(108.7deg, #fc4a1a -29.1%, #f7b733 97.76%);
+  padding: 20px 20px;
+  text-align: start;
+}
+.contact-info p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.contact-info i {
+  font-size: 1.8rem;
 }
