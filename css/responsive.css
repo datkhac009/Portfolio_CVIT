@@ -1,3 +1,66 @@
+@media only screen and (max-width: 1009.98px) { 
+    .header .header-menu .header-logo > h1{
+        font-size: 14px;
+    }
+    .nav-list li a{
+        font-size: 13px;
+    }
+    .header-introduce .header-introduce_yourself > h2{
+        font-size: 50px;
+    }
+    .header-introduce .header-introduce_yourself > h3{
+        font-size: 16px;
+    }
+    .header-introduce .header-introduce_yourself .header-introduce-link i{
+        font-size: 18px;
+    }
+    .header-introduce .header-introduce-img img{
+        width: 260px;
+    }
+    .section .section-story{
+        padding: 167px 2%;
+    }
+    .section-story .section-about h2{
+        font-size: 40px;
+    }
+    .section-story .section-about p{
+        font-size: 14px;
+    }
+    .section-avatar img{
+        width: 250px;
+        height: 250px;
+    }
+    .section-story .section-avatar h3{
+        font-size: 30px;
+    }
+    .services > h2{
+        font-size: 40px;
+    }
+    .services .my-services{
+        grid-gap: 40px;
+    }
+    .skill > h3{
+        font-size: 22px;
+    }
+    .skill > p{
+        font-size: 15px;
+    }
+    .portfolio_project h2{
+        font-size: 40px;
+    }
+    .contact h2{
+        font-size: 40px;
+    }
+    .contact-info{
+        padding-right: 0px;
+    }
+    .contact-info p{
+        font-size: 1rem;
+    }
+    .contact-info i{
+        font-size: 1.4rem;
+    }
+}
 @media only screen and (max-width: 600px) {
     #menu-icon{
         display: block;
