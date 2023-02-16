@@ -12,7 +12,6 @@
   --color-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
 }
 .wapper {
- 
 }
 .header {
   background: #27323e;
@@ -391,13 +390,10 @@
   color: #fff;
   left: 25px;
   border-radius: 50%;
-
 }
 .contact-form .form-field .form-input:focus {
-
-outline-color: #ff6200;
-  transition: .15s ;
-  
+  outline-color: #ff6200;
+  transition: 0.15s;
 }
 .contact-form .form-field .form-label {
   position: absolute;
