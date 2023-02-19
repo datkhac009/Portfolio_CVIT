@@ -119,6 +119,56 @@
   width: 291px;
   height: 600px;
 }
+
+
+/* dow CV */
+.download-btn {
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  margin: 20px 0px;
+  border-radius: 30px;
+  overflow:hidden ;
+}
+.download-btn.btn-1 {
+  border: 5px solid #98d9ff;
+}
+.download-btn.btn-1 .top,.download-btn.btn-1 .bottom {
+  text-transform: uppercase;
+  line-height: 51px;
+  font-weight: bold;
+}
+.download-btn.btn-1 .top {
+  background:linear-gradient(108.7deg, #fc4a1a -29.1%, #f7b733 97.76%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download-btn.btn-1 .top>a{
+  color: #ffffff;
+}
+.download-btn.btn-1 .bottom>a{
+  color: #000000;
+}
+.download-btn.btn-1 .bottom {
+  background: #eee;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn .top {
+  transition: all 300ms ease-in-out;
+}
+.download-btn.btn-1 i,.download-btn.btn-1 ion-icon{
+  font-size: 25px;
+}
+.download-btn:hover .top {
+  margin-top: -51px;
+}
+
+
 /* section */
 .section {
 }
