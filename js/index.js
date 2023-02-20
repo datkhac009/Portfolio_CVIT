@@ -42,6 +42,7 @@ $('.owl-carousel').owlCarousel({
   let lastScroll = 0;
   window.addEventListener('scroll', function (event) {
     console.log(document.body.scrollTop);
+    // console.log(event);
     let currentScroll = event.target.scrollingElement.scrollTop;
   
     if (lastScroll < currentScroll) {
@@ -49,7 +50,8 @@ $('.owl-carousel').owlCarousel({
       if (navList.classList.contains('open'))
         navList.classList.remove('open');
       
-    } else header.classList.remove('open');
+    } else 
+    header.classList.remove('open');
     
     lastScroll = currentScroll;
     return lastScroll
@@ -57,6 +59,7 @@ $('.owl-carousel').owlCarousel({
 $(document).ready(function(){
   $("#menu-icon").click(function(){
     // $(".nav-list").addClass("open");
+ 
     $(".nav-list").toggleClass("open");
   });
   });

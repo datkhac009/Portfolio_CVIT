@@ -217,6 +217,61 @@
   color: #fff;
   margin: 25px 0;
 }
+/* ****programming-skills***** */
+
+.programming-skills{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+  background-color: #111;
+  padding: 4.5rem 0;
+  gap: 4.5rem 4rem;
+  
+
+}
+.mb-1{
+  margin-bottom: 1em;
+}
+.items-skill{
+}
+.items-skill .items-skill-img{
+  display: flex;
+  background: #252525;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.items-skill-img:hover{
+  box-shadow: 0 0 30px #252525;
+  transform: scale(1.15);
+  transition: all .20s linear;
+}
+.items-skill .items-skill-img img{
+  position: absolute;
+  width: 84px;
+  height: 80px;
+  top: 1em;
+  bottom: 0;
+  right: 0;
+  left: 1em;
+  
+}
+.items-skill .items-skill-name{
+  display: flex;
+  justify-content: center;
+}
+.items-skill .items-skill-name>h6{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
 /* services */
 .services {
   background: #27323e;
