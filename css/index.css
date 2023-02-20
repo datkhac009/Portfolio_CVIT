@@ -268,7 +268,7 @@
 }
 .items-skill .items-skill-name>h6{
   font-size: 14px;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
   color: #fff;
 }
