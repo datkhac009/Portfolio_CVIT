@@ -17,26 +17,9 @@ $('.owl-carousel').owlCarousel({
       }
     }
   });
-  const links = document.querySelectorAll(".scroll_to");
-  links.forEach(items => {
-    items.addEventListener("click",()=>{
-      const el = document.getElementById(items.getAttribute("data-link"));
-      el.scrollIntoView({
-        behavior:"smooth",
-        block:"center"
-      })
-    })
-  });
-  AOS.init();
-  // TTH1
-  // let menu = document.querySelector("#menu-icon");
-  // let navlist = document.querySelector(".nav-list");
 
-  // menu.onclick=()=>{
-  //   navlist.classList.toggle("open");
-  // }
-  // TTH2
-  
+  AOS.init();
+
   const header = document.querySelector('.header .header-menu');
   const navList = document.querySelector('.header .header-menu .nav-list');
   let lastScroll = 0;
@@ -58,10 +41,23 @@ $('.owl-carousel').owlCarousel({
   });
 $(document).ready(function(){
   $("#menu-icon").click(function(){
-    // $(".nav-list").addClass("open");
- 
     $(".nav-list").toggleClass("open");
   });
   });
+
+
+
+const sroll_to = document.querySelectorAll(".scroll_to");
+sroll_to.forEach((items)=>{
+  items.addEventListener("click",()=>{
+  const el =   document.getElementById(items.getAttribute("data-link"))
+  el.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
+  })
+  })
+})
+
+
   
 
