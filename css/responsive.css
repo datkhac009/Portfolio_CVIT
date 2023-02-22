@@ -78,7 +78,7 @@
     font-size: 12px;
   }
   .header-introduce {
-    margin: 0 6%;
+    padding: 25% 6%;
   }
   .header-introduce .header-introduce_yourself > h2 {
     font-size: 33px;
@@ -190,7 +190,7 @@
     font-size: 10px;
   }
   .header-introduce {
-    margin: 0 3%;
+    padding: 0 3%;
   }
   .header-introduce .header-introduce-img img {
     display: none;
@@ -312,7 +312,7 @@
     font-size: 10px;
   }
   .header-introduce {
-    margin: 0 3%;
+    padding: 0 3%;
   }
   .header-introduce .header-introduce-img img {
     display: none;
@@ -451,7 +451,7 @@
     font-size: 10px;
   }
   .header-introduce {
-    margin: 0 3%;
+    padding: 0 3%;
   }
   .header-introduce_yourself {
     padding-top: 30%;

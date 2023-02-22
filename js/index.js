@@ -19,10 +19,11 @@ $('.owl-carousel').owlCarousel({
   });
 
   AOS.init();
-
   const header = document.querySelector('.header .header-menu');
   const navList = document.querySelector('.header .header-menu .nav-list');
-  let lastScroll = 0;
+  let lastScroll = 0;  //Khi mình scroll xuống 1 vị trí nào đó thì sẽ lưu cái giá đó vào lastscroll 
+  // const header = document.querySelector('.header .header-menu');
+  // const navList = header.querySelectorAll(':scope .nav-list')[0];
   window.addEventListener('scroll', function (event) {
     console.log(document.body.scrollTop);
     // console.log(event);
@@ -38,14 +39,12 @@ $('.owl-carousel').owlCarousel({
     
     lastScroll = currentScroll;
     return lastScroll
-  });
+  });  
 $(document).ready(function(){
   $("#menu-icon").click(function(){
     $(".nav-list").toggleClass("open");
   });
   });
-
-
 
 const sroll_to = document.querySelectorAll(".scroll_to");
 sroll_to.forEach((items)=>{
@@ -56,8 +55,18 @@ sroll_to.forEach((items)=>{
     block:"center"
   })
   })
-})
+}) 
 
+const wrapper = document.querySelector(".wapper")
+const home = wrapper.querySelector("#section1")
+const bars = wrapper.querySelector(".to-top")
+bars.addEventListener('click', function () {
+  home.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
+  
+});
 
   
 
