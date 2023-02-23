@@ -90,6 +90,10 @@ ion-icon {
 .open {
   top: -10%;
 }
+.opacity{
+  opacity:0;
+  transition: all cubic-bezier(.4,0,.2,1) .4s;
+}
 #menu-icon {
   cursor: pointer;
   font-size: 35px;

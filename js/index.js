@@ -22,24 +22,26 @@ $('.owl-carousel').owlCarousel({
   const header = document.querySelector('.header .header-menu');
   const navList = document.querySelector('.header .header-menu .nav-list');
   let lastScroll = 0;  //Khi mình scroll xuống 1 vị trí nào đó thì sẽ lưu cái giá đó vào lastscroll 
+  // const main = document.querySelector(".wapper")
   // const header = document.querySelector('.header .header-menu');
   // const navList = header.querySelectorAll(':scope .nav-list')[0];
   window.addEventListener('scroll', function (event) {
-    console.log(document.body.scrollTop);
+    // console.log(document.body.scrollTop);
     // console.log(event);
     let currentScroll = event.target.scrollingElement.scrollTop;
-  
+    // console.log("🚀 ~ file: index.js:31 ~ currentScroll:", currentScroll)
     if (lastScroll < currentScroll) {
       header.classList.add('open');
       if (navList.classList.contains('open'))
         navList.classList.remove('open');
-      
-    } else 
+    } else
     header.classList.remove('open');
-    
     lastScroll = currentScroll;
     return lastScroll
+  
   });  
+
+
 $(document).ready(function(){
   $("#menu-icon").click(function(){
     $(".nav-list").toggleClass("open");
@@ -67,6 +69,20 @@ bars.addEventListener('click', function () {
   });
   
 });
+const click_long_top = document.querySelector(".bars"); 
+let lastScrolls = 30;  //Khi mình scroll xuống 1 vị trí nào đó thì sẽ lưu cái giá đó vào lastscroll 
 
+window.addEventListener("scroll",(event)=>{
+  let currentScroll = event.target.scrollingElement.scrollTop;
+  // console.log("🚀 ~ file: index.js:74 ~ window.addEventListener ~ currentScroll:", currentScroll.toFixed(2))
+  
+  if(lastScrolls < currentScroll){
+    console.log("🚀 ~ file: index.js:77 ~ window.addEventListener ~ currentScroll:", currentScroll)
+    click_long_top.classList.remove("opacity")
+  }else
+    click_long_top.classList.add("opacity")
+    
+  
+})
   
 
