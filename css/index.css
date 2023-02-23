@@ -90,6 +90,9 @@ ion-icon {
 .open {
   top: -10%;
 }
+.bars{
+  transition: all cubic-bezier(.4,0,.2,1) .8s;
+}
 .opacity{
   opacity:0;
   transition: all cubic-bezier(.4,0,.2,1) .4s;
