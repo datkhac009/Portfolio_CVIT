@@ -25,11 +25,12 @@ $('.owl-carousel').owlCarousel({
   // const main = document.querySelector(".wapper")
   // const header = document.querySelector('.header .header-menu');
   // const navList = header.querySelectorAll(':scope .nav-list')[0];
+
   window.addEventListener('scroll', function (event) {
     // console.log(document.body.scrollTop);
     // console.log(event);
     let currentScroll = event.target.scrollingElement.scrollTop;
-    // console.log("🚀 ~ file: index.js:31 ~ currentScroll:", currentScroll)
+    console.log("🚀 ~ file: index.js:33 ~ currentScroll:", Math.floor(currentScroll))
     if (lastScroll < currentScroll) {
       header.classList.add('open');
       if (navList.classList.contains('open'))
@@ -77,7 +78,7 @@ window.addEventListener("scroll",(event)=>{
   // console.log("🚀 ~ file: index.js:74 ~ window.addEventListener ~ currentScroll:", currentScroll.toFixed(2))
   
   if(lastScrolls < currentScroll){
-    console.log("🚀 ~ file: index.js:77 ~ window.addEventListener ~ currentScroll:", currentScroll)
+    // console.log("🚀 ~ file: index.js:77 ~ window.addEventListener ~ currentScroll:", currentScroll)
     click_long_top.classList.remove("opacity")
   }else
     click_long_top.classList.add("opacity")
